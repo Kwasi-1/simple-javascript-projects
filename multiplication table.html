@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+</head>
+<body>
+  <h2>Multiplication table</h2>
+  <div class="js-table"></div>
+
+  <script>
+    let num = prompt('Enter the number your want its multiplication table');
+    let html;
+    let timesTable = document.querySelector('.js-table');
+    let timetableHtml = [];
+   S
+    for(i =1; i < 130; i++){
+      let product = num * i;
+      html = `<p>${num} x ${i} = ${product}</p>`;
+
+      timetableHtml += html;
+    }
+    
+
+    timesTable.innerHTML = timetableHtml;
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>triangle</title>
+</head>
+<body>
+  <script>
+    function triangle(base, side, other){
+      let s = (base+ side + other)/2;
+
+      let area = Math.sqrt(s*(s-base)*(s-side)*(s-other));
+
+      let perimeter = base + side + other
+
+      console.log(`the area of the triangle is ${area}`);
+      console.log(`the perimeter of the triangle is ${perimeter}`)
+    }
+
+    triangle(10, 13,13)
+  </script>
+</body>
+</html>

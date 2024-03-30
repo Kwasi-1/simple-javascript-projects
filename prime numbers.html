@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Numbers</title>
+</head>
+<body>
+  <script>
+    let lowerBoundary = prompt('Your prime numbers starts at:');
+    let UpperBoundary = prompt('Your prime numbers end at:');
+
+    for (num = lowerBoundary; num <= UpperBoundary; num++ ){
+      let fact = 0;
+      for(i = 2 ; i < num; i++){
+        if(num % i === 0){
+          fact = 1
+        }
+      }
+
+      if(num > 1 && fact === 0){
+        console.log(num);
+      }
+    }
+  </script>
+</body>
+</html>
