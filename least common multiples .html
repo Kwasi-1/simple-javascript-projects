@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function LCMFunction (num1, num2){
+        let hcf;
+        
+        for(i=1; i<=num2 && i <= num1; i++){
+          if(num1 % i === 0 && num2 % i ===0 ){
+            hcf = i;
+          } 
+        }
+        let LCM = num1 * num2 / hcf; 
+
+        console.log(LCM)
+      }
+
+      LCMFunction(3, 9);
+    </script>
+  </body>
+</html>
