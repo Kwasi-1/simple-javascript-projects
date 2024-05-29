@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function ask(question, yes, no) {
+      // if (confirm(question)) yes()
+      // else no();
+      // }
+      
+      
+      // // usage: functions showOk, showCancel are passed as arguments to ask
+      // ask(
+      //   "Do you agree?", 
+      //   function (){alert( "You agreed." );}, 
+      //   function (){alert( "You canceled the execution." ); }
+      // );
+
+      let age = prompt("what your age?", 18);
+
+      function welcome(){
+        alert(greetings);
+      }
+
+      if(age < 18){
+        greetings = "Hello!";
+      }else{
+        greetings = "Greetings!";
+      }
+       
+      welcome();
+    </script>
+  </body>
+</html>
